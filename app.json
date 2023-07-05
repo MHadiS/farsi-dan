@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "farsiDanApp",
+    "slug": "farsiDanApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-ios.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1c1e"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-android.png",
+        "backgroundColor": "#092844"
+      },
+      "package": "com.hadi98.farsiDanApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2660b6be-0ea5-4a4f-a9a3-a14b69b46f14"
+      }
+    }
+  }
+}

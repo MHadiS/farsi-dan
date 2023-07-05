@@ -55,13 +55,6 @@ function MyMenu(props) {
                         )
                     )
                 }
-                <Menu.Item
-                 theme={theme}
-                 title="تغییر رنگ بندی"
-                 onPress={() => {
-                    context.setThemeName(name => name == "dark" ? "light" : name)
-                 }}
-                />
             </Menu>
     );
 }

@@ -29,10 +29,12 @@ export const styles = StyleSheet.create({
   labelSection: {
     flexDirection: "row",
     justifyContent: 'flex-end',
-    columnGap: "12%",
-    rowGap: "10%",
     marginBottom: 12,
     flexWrap: 'wrap'
+  },
+
+  label: {
+    marginLeft: 10
   },
 
   fab: {

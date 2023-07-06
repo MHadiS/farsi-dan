@@ -26,7 +26,7 @@ function Label(props) {
     )
 
     return (
-        <Chip size={20} theme={theme}> {(props.tag == "chapters" ? "درس " : "") + label} </Chip>
+        <Chip style={styles.label} size={20} theme={theme}> {(props.tag == "chapters" ? "درس " : "") + label} </Chip>
     );
 }
 

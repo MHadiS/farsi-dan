@@ -79,7 +79,7 @@ export default function App() {
                             color: theme.colors.onSurfaceVariant
                         },
                         headerTintColor: theme.colors.onBackground,
-                        headerTitleAlign: 'right',
+                        // headerTitleAlign: 'right',
                         
 
                     }}>
@@ -88,7 +88,7 @@ export default function App() {
                             component={HomeScreen} 
                             options={{
                                         title: "فارسیدان نهم",
-                                        headerLeft: () => <MyMenu/>
+                                        headerRight: () => <MyMenu/>
                                     }}
                         />
                         <Stack.Screen name="filter" component={FilterScreen} options={{title: "فیلتر"}}/>

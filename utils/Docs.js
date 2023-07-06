@@ -54,4 +54,5 @@ export const CONTACT_US = `
 
 ## برای ارتباط با می توانید ار ایمیل های زیر استفاده کنید
 محمد هادی شکیب آزاد : mhshakibazad@gmail.com
+احمد یوسفی : ahmadyoosefi86@gmail.com
 `

@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import { Context } from "../utils/Contexts";
+// registering the color themes
 
 const DARK_THEME = {
   "colors": {

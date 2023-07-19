@@ -15,10 +15,12 @@ import ContactUsScreen from "./screens/ContactUsScreen";
 import AboutUsScreen from "./screens/AboutUsScreen";
 
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();  // creating an stack navigator for app navigation
 
 
 function MyMenu(props) {
+    // Menu component use at right of app bat
+
     const context = useContext(Context)
     const [visible, setVisible] = useState(false)
     const navigation = useNavigation()
@@ -61,13 +63,14 @@ function MyMenu(props) {
 
 
 export default function App() {    
-    testConnection()
-    const [themeName, setThemeName] = useState("dark")
+    // register screens for navigation
+
+    testConnection()  // test the connection
     const [questions, setQuestions] = useState([])
 
     return (
         <PaperProvider theme={theme}>
-            <Context.Provider value={{questions, setQuestions, themeName, setThemeName}}>
+            <Context.Provider value={{questions, setQuestions}}>
                 <NavigationContainer>
                     <Stack.Navigator 
                     screenOptions={{

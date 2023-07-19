@@ -17,6 +17,7 @@ function ComingSoon(props) {
 
 
 export default function HomeScreen(props) {
+  // home screen with tab navigation
   return (
       <PaperProvider>
         <View style={styles.container}>

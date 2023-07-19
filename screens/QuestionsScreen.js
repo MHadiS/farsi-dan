@@ -10,6 +10,7 @@ import { Context } from "../utils/Contexts";
 
 
 function Label(props) {
+    // questions labels
     const [label, setLabel] = useState("")
 
     tags = {
@@ -32,6 +33,7 @@ function Label(props) {
 
 
 function Question(props) {
+    // a question component
     const navigator = useNavigation()
     let question = props.questions[props.questionIndex]
 
@@ -43,6 +45,7 @@ function Question(props) {
 
     return (
         <TouchableOpacity onPress={() => {
+            // navigate to SolvingScreen to solve the question
             navigator.navigate("solving", {questions: props.questions, questionIndex: props.questionIndex})}
         }>
             <Card theme={theme} style={styles.questionCard}>
@@ -77,7 +80,7 @@ export default function QuestionsScreen(props) {
     const context = useContext(Context)
 
     useEffect(() => {
-        getQuestions(context.setQuestions)
+        getQuestions(context.setQuestions)  // load the questions when QuestionScreen is loaded
     }, [])
 
     return (

@@ -1,3 +1,6 @@
+// the documentations used for guide, contact us and about us section
+
+
 export const GUIDE = `
 # راهنمای استفاده از برنامه
 

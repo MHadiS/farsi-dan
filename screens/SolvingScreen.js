@@ -8,11 +8,13 @@ import { useState } from "react";
 
 
 function Option(props) {
+    // options for a question
     const [bgColor, setBgColor] = useState(theme.colors.surfaceVariant)
     return (
             <TouchableOpacity 
                 style={[styles.option, styles.surface, {backgroundColor: bgColor}]}
                 onPress={() => {
+                    // if the user press the correct option it will be green
                     if (props.is_correct) {
                         setBgColor("green")
                     } else {
@@ -26,6 +28,7 @@ function Option(props) {
 
 
 function SolvingPage(props) {
+    // where you can answer to a question
     let question = props.question
     let options = [
         [question.option_1, false],
@@ -52,6 +55,8 @@ function SolvingPage(props) {
 }
 
 export default function SolvingScreen({ route }) {
+    // load multiple SolvingPage for each question in 'route.params.questions' and navigating in them with tab navigation
+
     const questions = route.params.questions
     const questionIndex = route.params.questionIndex
     return (

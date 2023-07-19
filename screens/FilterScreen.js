@@ -10,18 +10,20 @@ import { Context } from "../utils/Contexts";
 
 
 function Dropdown(props) {
+    // drop down components used for filtering
     const [data, setData] = useState([])
 
     useEffect(() => {
-        getAttributes(props.tag, setData)
+        getAttributes(props.tag, setData)  // get the attributes when dorp down is loaded
     }, [])
 
+    // format the data (attributes)
     let formatted_data = data.map( item => {
             return {key: String(item["id"]), value: String(item[props.dropdownName])}
         }
     )
-
     formatted_data.unshift({key: 0, value: "همه"})
+
     return (
         <SelectList
             search={false}
@@ -40,12 +42,14 @@ function Dropdown(props) {
 
 
 export default function FilterScreen() {
+    // the questions attributes
     let [type, setType] = useState("0")
     let [difficulty, setDifficulty] = useState("0")
     let [chapter, setChapter] = useState("0")
 
-    const context = useContext(Context)
+    const context = useContext(Context)  // load a context
 
+    // filter the question when the user select a value in the drop down
     useEffect(() => {
         getQuestions(
             context.setQuestions,

@@ -98,7 +98,7 @@ export default function App() {
                         <Stack.Screen name="solving" component={SolvingScreen} options={{title: "حل سوال"}}/>
                         <Stack.Screen name="guide" component={GuideScreen} options={{title: "راهنما"}}/>
                         <Stack.Screen name="aboutUs" component={AboutUsScreen} options={{title: "درباره ی ما"}}/>
-                        <Stack.Screen name="contactUs" component={ContactUsScreen} options={{title: "اتباط با ما"}}/>
+                        <Stack.Screen name="contactUs" component={ContactUsScreen} options={{title: "ارتباط با ما"}}/>
                     </Stack.Navigator>
                 </NavigationContainer>
             </Context.Provider>

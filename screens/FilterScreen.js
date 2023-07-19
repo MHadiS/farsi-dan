@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import { theme } from "../style/Themes";
 import { getAttributes, getQuestions } from "../utils/Backend";
 import { Context } from "../utils/Contexts";
+import { ScrollView } from "react-native-web";
 
 
 function Dropdown(props) {
